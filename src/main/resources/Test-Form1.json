@@ -3,19 +3,42 @@
     {
       "text": "# Text",
       "type": "text",
-      "id": "Field_1do78o0"
-    },
-    {
-      "label": "Text Field",
-      "type": "textfield",
-      "id": "Field_06bapta",
-      "key": "field_0qfv3gw"
+      "id": "Field_03yxvtn"
     },
     {
       "label": "Number",
       "type": "number",
-      "id": "Field_091tdbc",
-      "key": "field_0vtu9tl"
+      "id": "Field_0t7o16r",
+      "key": "field_0pd81x8"
+    },
+    {
+      "label": "Number",
+      "type": "number",
+      "id": "Field_1kxjhhz",
+      "key": "field_0dfq0i3"
+    },
+    {
+      "label": "Text Field",
+      "type": "textfield",
+      "id": "Field_1i96as9",
+      "key": "field_0irnt73"
+    },
+    {
+      "text": "# Text",
+      "type": "text",
+      "id": "Field_0judr6b"
+    },
+    {
+      "label": "Text Field",
+      "type": "textfield",
+      "id": "Field_1lecvz2",
+      "key": "field_0mnaicf"
+    },
+    {
+      "label": "Text Field",
+      "type": "textfield",
+      "id": "Field_16dywvk",
+      "key": "field_04nx4qt"
     }
   ],
   "type": "default",

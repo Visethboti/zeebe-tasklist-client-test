@@ -30,7 +30,7 @@ public class JsonToHtml {
 
 		String formHead, formEnd, label, input;
 
-		formHead = "<form action=\"/nosubmit\">";
+		formHead = "<form action=\"/Submit\"  method=\"post\">";
 		formEnd = " <input type=\"submit\" value=\"Submit\"> </form>";
 
 		html.append(formHead);
@@ -71,12 +71,12 @@ public class JsonToHtml {
 
 		switch (componentType) {
 		case "textfield":
-			input = "<input type=\"textfield\"><br>";
+			input = "<input type=\"textfield\" name=" + component.get("key").toString() + "><br>";
 			break;
 		case "text":
 			break; // text only show text in label, no input element
 		case "number":
-			input = "<input type=\"number\"><br>";
+			input = "<input type=\"number\" name=" + component.get("key").toString() + "><br>";
 			break;
 		case "radio":
 			// loop to create input for each radio buttons
