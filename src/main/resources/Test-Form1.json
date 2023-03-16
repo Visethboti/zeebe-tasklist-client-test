@@ -1,0 +1,31 @@
+{
+  "components": [
+    {
+      "label": "First Name",
+      "type": "textfield",
+      "id": "Field_1ctchaf",
+      "key": "field_1s8t981"
+    },
+    {
+      "label": "Last Name",
+      "type": "textfield",
+      "id": "Field_1hqgitb",
+      "key": "field_1ulv0bc"
+    },
+    {
+      "label": "Comment",
+      "type": "textfield",
+      "id": "Field_154uddh",
+      "key": "field_1b16q5r"
+    }
+  ],
+  "type": "default",
+  "id": "Form_0y4v15c",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.1.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.6.0"
+  },
+  "schemaVersion": 5
+}
