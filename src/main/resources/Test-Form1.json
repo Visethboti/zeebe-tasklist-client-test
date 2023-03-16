@@ -1,26 +1,25 @@
 {
   "components": [
     {
-      "label": "First Name",
-      "type": "textfield",
-      "id": "Field_1ctchaf",
-      "key": "field_1s8t981"
+      "text": "# Text",
+      "type": "text",
+      "id": "Field_1do78o0"
     },
     {
-      "label": "Last Name",
+      "label": "Text Field",
       "type": "textfield",
-      "id": "Field_1hqgitb",
-      "key": "field_1ulv0bc"
+      "id": "Field_06bapta",
+      "key": "field_0qfv3gw"
     },
     {
-      "label": "Comment",
-      "type": "textfield",
-      "id": "Field_154uddh",
-      "key": "field_1b16q5r"
+      "label": "Number",
+      "type": "number",
+      "id": "Field_091tdbc",
+      "key": "field_0vtu9tl"
     }
   ],
   "type": "default",
-  "id": "Form_0y4v15c",
+  "id": "Form_1k9xhqk",
   "executionPlatform": "Camunda Cloud",
   "executionPlatformVersion": "8.1.0",
   "exporter": {

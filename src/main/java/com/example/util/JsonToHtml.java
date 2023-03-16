@@ -6,6 +6,7 @@ import org.json.JSONObject;
 
 public class JsonToHtml {
 
+	// Constructor
 	public JsonToHtml() {
 
 	}
@@ -40,8 +41,8 @@ public class JsonToHtml {
 			JSONObject component = (JSONObject) array.get(i);
 			System.out.println(component.get("type"));
 			// System.out.println(array.get(i));
-			label = "<label>" + component.get("label") + "</label>";
-			input = "<input type=\"text\">";
+			label = componentToLabel(component);
+			input = componentToInput(component);
 			html.append(label);
 			html.append(input);
 		}
@@ -51,14 +52,41 @@ public class JsonToHtml {
 		return html.toString();
 	}
 
-	private String componentToLabel(JSONObject component) {
+	private String componentToLabel(JSONObject component) throws JSONException {
 		String label = "";
+
+		if (component.get("type").equals("text")) {
+			label = "<label>" + component.get("text") + "</label><br>";
+		} else {
+			label = "<label>" + component.get("label") + "</label><br>";
+		}
 
 		return label;
 	}
 
-	private String componentToInput(JSONObject component) {
+	private String componentToInput(JSONObject component) throws JSONException {
 		String input = "";
+
+		String componentType = component.get("type").toString();
+
+		switch (componentType) {
+		case "textfield":
+			input = "<input type=\"textfield\"><br>";
+			break;
+		case "text":
+			break; // text only show text in label, no input element
+		case "number":
+			input = "<input type=\"number\"><br>";
+			break;
+		case "radio":
+			// loop to create input for each radio buttons
+			input = "<input type=\"radio\">";
+			break;
+		default:
+			System.out.println("Not supported component type: " + component.get("type"));
+			input = "<p>ERROR COMPONENT</p><br>";
+			break;
+		}
 
 		return input;
 	}
